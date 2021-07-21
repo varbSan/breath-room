@@ -34,7 +34,7 @@ const formattedDocuments = computed(() => {
 
 <style scoped>
   .chat-window {
-    background: #fafafa;
+    background-color: hsla(0, 0%, 100%, .2);;
     padding: 1rem 2rem;
     text-align: start;
   }

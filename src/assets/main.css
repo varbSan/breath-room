@@ -1,5 +1,6 @@
 body {
   background-image: url('https://wallpapercave.com/wp/wp5727862.jpg');
+  background-size: cover;
   color: hsl(0, 0%, 27%);
 }
 .container {
@@ -8,11 +9,11 @@ body {
   margin: 8rem auto;
   border-radius: 2rem;
   box-shadow: .2rem .4rem .6rem hsla(271, 78%, 11%, 0.102);
-  background: hsl(0, 0%, 100%);
+  background-color: hsla(0, 0%, 100%, .5);
 }
 .error {
   color: hsl(340, 100%, 62%);
-  font-size: 2rem;
+  font-size: .8rem;
 }
 button {
   text-decoration: none;
