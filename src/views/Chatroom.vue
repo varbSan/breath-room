@@ -1,5 +1,5 @@
 <template>
-  <h1>Chatroom</h1>
+  <h1>Breath Chatroom</h1>
   <div class="container">
     <Navbar />
     <ChatWindow />
@@ -33,9 +33,10 @@ function exitChatroom() {
 </script>
 
 <style lang="scss">
+ 
   .welcome {
     text-align: center;
-    padding: 20px 0;
+    padding: 1rem 0;
   }
   .welcome span{
     font-weight: bold;

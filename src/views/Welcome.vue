@@ -1,12 +1,12 @@
 <template>
   <div class="welcome container">
     <div v-if="isLoggedIn">
-      <h2>Log In to Vite Chatroom</h2>
+      <h2>Log In to Breath Chatroom</h2>
       <LoginForm @login="enterChatroom"/>
       <p>No account yet? <span @click="isLoggedIn = false">Sign up</span> instead</p>
     </div>
     <div v-else>
-      <h2>Sign Up to Vite Chatroom</h2>
+      <h2>Sign Up to Breath Chatroom</h2>
       <SignupForm @signup="enterChatroom"/>
       <p>Already registered? <span @click="isLoggedIn = true">Log in</span> instead</p>
     </div>

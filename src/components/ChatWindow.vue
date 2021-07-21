@@ -34,7 +34,7 @@ const formattedDocuments = computed(() => {
 
 <style scoped>
   .chat-window {
-    background-color: hsla(0, 0%, 100%, .2);;
+    background-color: transparent;
     padding: 1rem 2rem;
     text-align: start;
   }
@@ -52,7 +52,7 @@ const formattedDocuments = computed(() => {
     margin-right: 6px;
   }
   .messages {
-    max-height: 35vh;
+    max-height: 40vh;
     overflow: auto;
   }
 </style>

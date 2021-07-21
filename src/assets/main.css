@@ -1,12 +1,15 @@
 body {
   background-image: url('https://wallpapercave.com/wp/wp5727862.jpg');
-  background-size: cover;
+  object-fit: cover;
   color: hsl(0, 0%, 27%);
 }
 .container {
+  display: grid;
   width: 90%;
   max-width: 96rem;
-  margin: 8rem auto;
+  min-height: 70vh;
+  align-items: center;
+  margin: 3rem auto;
   border-radius: 2rem;
   box-shadow: .2rem .4rem .6rem hsla(271, 78%, 11%, 0.102);
   background-color: hsla(0, 0%, 100%, .5);
@@ -14,6 +17,9 @@ body {
 .error {
   color: hsl(340, 100%, 62%);
   font-size: .8rem;
+}
+h1 {
+  color: hsla(0, 0%, 100%, .5);
 }
 button {
   text-decoration: none;
@@ -23,7 +29,7 @@ button {
   border: 0;
   border-radius: 2rem;
   padding: 1rem 2rem;
-  transition: all 200ms ease
+  transition: all 200ms ease;
 }
 
 button:hover {
