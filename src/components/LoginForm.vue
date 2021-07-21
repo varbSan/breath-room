@@ -36,7 +36,7 @@ import useLogin from '../composables/useLogin.js'
     margin: 20px 0 10px;
   }
   input {
-    width: 100%;
+    width: 80%;
     padding: 10px;
     border-radius: 20px;
     border: 1px solid #eee;

@@ -1,5 +1,5 @@
 <template>
-  <h1>Breath Chatroom</h1>
+  <h1>Breath Room</h1>
   <div class="container">
     <Navbar />
     <ChatWindow />

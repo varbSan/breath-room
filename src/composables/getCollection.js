@@ -5,12 +5,13 @@ function getCollection(collection) {
   const documents = ref(null)
   const error = ref(null)
   let collectionRef = db.collection(collection)
-    .orderBy('createdAt', 'asc')
+    .orderBy('createdAt', 'desc')
+    .limit(10)
 
   const unsub = collectionRef.onSnapshot(snap => {
     let results = []
     snap.docs.forEach(doc => {
-      doc.data().createdAt && results.push({...doc.data(), id: doc.id})
+      doc.data().createdAt && results.unshift({...doc.data(), id: doc.id})
     })
     documents.value = results
     error.value = null
