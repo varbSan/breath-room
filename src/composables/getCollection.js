@@ -21,10 +21,7 @@ function getCollection(collection) {
   })
 
   watchEffect(onInvalidate => {
-    onInvalidate(() => {
-    console.log(unsub)
-    unsub()
-    })
+    onInvalidate(() => unsub())
   })
 
   return { documents, error }
