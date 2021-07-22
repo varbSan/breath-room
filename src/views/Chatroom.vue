@@ -1,5 +1,4 @@
 <template>
-  <h1>Breath Room</h1>
   <div class="container">
     <Navbar />
     <ChatWindow />

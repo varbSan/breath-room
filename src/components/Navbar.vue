@@ -1,8 +1,8 @@
 <template>
   <nav v-if="user">
     <div>
-      <p>{{ user.displayName }}</p>
-      <p class="email">Currently logged in as... {{ user.email }}</p>
+      <p class="username">{{ user.displayName }}</p>
+      <p class="email">{{ user.email }}</p>
     </div>
     <button @click="handleLogout">Logout</button>
   </nav>
@@ -36,10 +36,15 @@ async function handleLogout() {
   nav p {
     margin: 2px auto;
     font-size: 16px;
-    color: #444;
+    color: hsl(0, 0%, 27%);
   }
   nav p.email {
     font-size: 14px;
-    color: #999;
+    color: hsl(0, 0%, 60%);
+  }
+
+  .username {
+    font-weight: bold;
+    font-size: 2rem;
   }
 </style>

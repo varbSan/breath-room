@@ -43,7 +43,7 @@ const formattedDocuments = computed(() => {
   }
   .created-at {
     display: block;
-    color: #999;
+    color: hsl(0, 0%, 60%);
     font-size: 12px;
     margin-bottom: 4px;
   }
@@ -55,4 +55,5 @@ const formattedDocuments = computed(() => {
     max-height: 40vh;
     overflow: auto;
   }
+  
 </style>

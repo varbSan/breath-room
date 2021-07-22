@@ -1,14 +1,14 @@
 <template>
   <div class="welcome container">
     <div v-if="isLoggedIn">
-      <h2>Log In to Breath Room</h2>
+      <h2>Access<br>Breath Room</h2>
       <LoginForm @login="enterChatroom"/>
-      <p>No account yet? <span @click="isLoggedIn = false">Sign up</span> instead</p>
+      <p>No account yet? <span @click="isLoggedIn = false" class="span-link">Sign up</span> instead</p>
     </div>
     <div v-else>
-      <h2>Sign Up to Breath Room</h2>
+      <h2>Access<br>Breath Room</h2>
       <SignupForm @signup="enterChatroom"/>
-      <p>Already registered? <span @click="isLoggedIn = true">Log in</span> instead</p>
+      <p>Already registered? <span @click="isLoggedIn = true" class="span-link">Log in</span> instead</p>
     </div>
   </div>
 </template>
@@ -41,5 +41,10 @@ function enterChatroom() {
   .welcome button {
     margin: 20px auto;
   }
-
+  .span-link {
+    transition: all 200ms ease;
+    &:hover {
+      color:black
+    }
+  }
 </style>

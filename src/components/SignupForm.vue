@@ -1,4 +1,4 @@
-e<template>
+<template>
   <form @submit.prevent="handleSubmit">
     <input type="text" required placeholder="display name" v-model="displayName">
     <input type="email" required placeholder="email" v-model="email">

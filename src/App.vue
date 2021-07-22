@@ -1,4 +1,5 @@
 <template>
+  <h1>Breath Room</h1>
   <router-view />
 </template>
 
