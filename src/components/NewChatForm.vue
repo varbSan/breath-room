@@ -36,6 +36,8 @@ const handleSubmit = async () => {
 <style scoped>
   form {
     margin: 10px;
+    align-self: end;
+    text-align: bottom;
   }
   textarea {
     width: 100%;
@@ -48,5 +50,7 @@ const handleSubmit = async () => {
     border-radius: 20px;
     font-family: inherit;
     outline: none;
+    align-items: end;
+
   }
 </style>

@@ -32,6 +32,7 @@ async function handleLogout() {
     justify-content: space-between;
     align-items: center;
     text-align: start;
+    align-self: start;
   }
   nav p {
     margin: 2px auto;
