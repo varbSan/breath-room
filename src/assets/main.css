@@ -13,7 +13,7 @@ body {
   border-radius: 2rem;
   box-shadow: .2rem .4rem .6rem hsla(271, 78%, 11%, 0.102);
   background-color: hsla(0, 0%, 100%, .8);
-  animation: containerBreath 19000ms infinite;
+  animation: containerBreath 16000ms infinite;
 }
 
 @keyframes containerBreath {
@@ -22,15 +22,20 @@ body {
     background-color: hsla(0, 0%, 100%, 0);
     box-shadow: .2rem .4rem .6rem hsla(271, 78%, 11%, 0);
   }
-  21% {
+  25% {
     transform: scale(1);
     background-color: hsla(0, 0%, 100%, .8);
     box-shadow: .2rem .4rem .6rem hsla(271, 78%, 11%, 0.102);
   }
-  58% {
+  50% {
     transform: scale(1);
     background-color: hsla(0, 0%, 100%, .8);
     box-shadow: .2rem .4rem .6rem hsla(271, 78%, 11%, 0.102);
+  }
+  75% {
+    transform: scale(.8);
+    background-color: hsla(0, 0%, 100%, 0);
+    box-shadow: .2rem .4rem .6rem hsla(271, 78%, 11%, 0);
   }
   100% {
     transform: scale(.8);
